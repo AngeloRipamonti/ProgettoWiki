@@ -5,11 +5,11 @@ Ci sono più notazioni per realizzare uno schema E/R, le due più utilizzate son
 
 Nella fase di “traduzione” da linguaggio naturale a modello E/R si usano indicativamente queste regole:
 
-| Struttura grammaticale | Struttura E/R |
-| sostantivo (di un concetto complesso che va approfondito) | entità |
-| nome proprio | istanza |
-| aggettivo o sostantivo (di un concetto semplice) | attributo |
-| verbo | associazione |
-| avverbio | attributo di un’associazione |
+| Struttura grammaticale | Struttura E/R 
+| sostantivo (di un concetto complesso che va approfondito) | entità 
+| nome proprio | istanza 
+| aggettivo o sostantivo (di un concetto semplice) | attributo 
+| verbo | associazione 
+| avverbio | attributo di un’associazione 
 
 *Scritto da: Cicoria Davide - Revisionato da: Avveduto Luca*
