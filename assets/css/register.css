@@ -1,0 +1,163 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+#register {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+h2 {
+    font-size: 1.7em;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+.input-container {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+label {
+    display: block;
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 5px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+.role-selection {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #ddd;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.role-btn {
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    font-size: 1em;
+    text-align: center;
+    flex: 1;
+    background-color: #e0e0e0;
+    color: black;
+    border: none;
+    font-weight: bold;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+}
+.role-btn:first-of-type {
+    border-radius: 25px 0 0 25px;
+}
+.role-btn:last-of-type {
+    border-radius: 0 25px 25px 0;
+}
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"]:checked + label {
+    background-color: black;
+    color: white;
+}
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.social-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+.black {
+    background-color: black;
+    color: white;
+}
+.gray {
+    background-color: lightgray;
+    color: black;
+}
+button#applyButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #2b5dab;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 15px;
+}
+button#applyButton:hover {
+    background-color: #1d3f7f;
+}
+.role-selection {
+    display: flex;
+}
+
+.role-btn {
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    font-size: 1em;
+    text-align: center;
+    flex: 1;
+    background-color: #e0e0e0;
+    color: black;
+    border: none;
+    font-weight: bold;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+}
+
+.role-btn:first-of-type {
+    border-radius: 25px 0 0 25px;
+}
+
+.role-btn:last-of-type {
+    border-radius: 0 25px 25px 0;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    background-color: black;
+    color: white;
+}
+
+/* Stile per il pulsante non selezionato */
+.role-btn:not(:has(+ :checked)) {
+    background-color: lightgray;
+    color: black;
+}
+

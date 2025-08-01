@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <link href="assets/images/favicon.png" rel="icon" />
+    <title>Progetto Wiki</title>
+    <meta name="description" content="Your ThemeForest item Name and description">
+    <meta name="author" content="harnishdesign.net">
+
+    <!-- Stylesheet
+    ============================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+    <!-- Highlight Syntax -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+    </head>
+
+    <body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+    <!-- Preloader -->
+    <div class="preloader">
+    <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    </div>
+    <!-- Preloader End --> 
+
+    <!-- Document Wrapper   
+    =============================== -->
+    <div id="main-wrapper"> 
+    
+
+    
+    <!-- Content
+    ============================ -->
+    <div id="content" role="main">
+        
+        <!-- Sidebar Navigation
+        ============================ -->
+        <div class="idocs-navigation bg-dark docs-navigation-dark">
+        <ul class="nav flex-column ">
+            <li class="nav-item"><a class="nav-link active" href="#start">Inizio</a>          
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#architettura_informazione">Architettura informazione</a>          
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#UML">UML/ER/Logic Model</a>
+                <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="#umlcasiduso">Casi d'uso</a></li>
+                <li class="nav-item"><a class="nav-link" href="#umlstato">Stato</a></li>
+                <li class="nav-item"><a class="nav-link" href="#umlsequenza">Sequenza</a></li>
+                <li class="nav-item"><a class="nav-link" href="#umler">Entity Relationship</a></li>  
+                <li class="nav-item"><a class="nav-link" href="#logicmodel">Logic Model</a></li>          
+            </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#requisiti">Requisiti</a>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="#requisitifunzionali">Requisiti Funzionali</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#requisitireteesicurezza">Requisiti di Rete e Sicurezza</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#wireframes">Wireframes</a></li>    
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#progetto">Il progetto</a>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="#link">Link al progetto</a></li>
+                </ul>  
+            </li>
+        </ul>
+        </div>
+        
+    
+        <div class="idocs-content">
+        <div class="container"> 
+    
+            <section id="start">
+            <h1>Documentazione</h1>
+            <h2>Progetto Wiki</h2>
+            <p class="lead">
+                Si vuole realizzare una <b>web application</b> per la consultazione di una wiki, 
+                accessibile sia ad <u>utenti senza account</u> sia con <u>permessi speciali</u>.
+                L'obbiettivo del progetto è fornire una piattaforma collaborativa in cui le voci delle wiki possano
+                essere <b>create</b>, <b>modificate</b> e <b>approvate</b> in maniera <b>controllata</b>. <br>
+                Ogni voce della wiki dovrà includere:
+                <ul>
+                    <li><strong>Titolo</strong> → nome principale della voce.</li>
+                    <li><strong>Abstract</strong> → breve descrizione del contenuto.</li>
+                    <li><strong>Contenuto</strong> → corpo principale della voce.</li>
+                    <li><strong>Immagini</strong> → contenuti multimediali.</li>
+                    <li><strong>Link ad altri contenuti</strong> → collegamenti ad altre pagine della wiki per semplificare la navigazione.</li>
+                </ul>
+            </p>
+            <hr>
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <ul class="list-unstyled">
+                        <li><strong>Classe/Anno:</strong> 5°C Informatica - 24/25</li>
+                        <li><strong>Author:</strong> Angelo Ripamonti, Alexandros Kotis, Lorenzo Di Donna e Simone Tacconi</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <ul class="list-unstyled">
+                        <li><strong class="font-weight-700">Creato:</strong> 26 Febbraio 2025</li>
+                        <li><strong>Ultima modifica:</strong> 10 Marzo 2025</li>
+                    </ul>
+                </div>
+            </div>
+            </section>
+            
+            <hr class="divider">
+
+            <section id="architettura_informazione">
+            <h2>Architettura informazione</h2>
+            <p class="lead">Di seguito il diagramma che rappresenta la struttura delle informazioni del progetto.</p>
+            <picture>
+                <img src="/assets/schemas/SchemaArchittetura.png" alt="Schema dell'Architettura" />
+            </picture>
+            </section>
+            
+            <hr class="divider">
+
+
+            <section id="UML">
+                <h2>UML</h2>
+                <p class="lead">Di seguito i vari Diagrammi UML</p>
+            </section>
+
+            <section id="umlcasiduso">
+                <h2>Diagramma di Casi d'uso</h2>
+                <p class="lead">Di seguito il diagramma di casi d'uso.</p>
+                <picture>
+                    <img src="/assets/schemas/Casi d'uso.drawio.png" alt="Schema Casi d'uso" />
+                </picture>
+            
+            </section>
+
+            <section id="umlstato">
+                <h2>Diagramma di Stato</h2>
+                <p class="lead">Di seguito il diagramma di stato.</p>
+                <picture>
+                    <img src="/assets/schemas/SchemaStato.drawio.png" alt="Schema Stato" />
+                </picture>
+            
+            </section>
+        </section>
+
+        <section id="umlsequenza">
+            <h2>Diagramma di Sequenza</h2>
+            <p class="lead">Di seguito il diagramma di sequenza.</p>
+            <picture>
+                <img src="/assets/schemas/SchemaSequenza.drawio.png" alt="Schema Sequenza" />
+            </picture>
+        
+        </section>
+
+            <section id="umler">
+                <h2>Schema ER</h2>
+                <p class="lead">Di seguito lo schema ER.</p>          
+                <picture>
+                    <img src="/assets/schemas/ER/SchemaER.drawio.png" alt="Schema ER" />
+                    <figcaption>
+                        <strong>Ipotesi:</strong>
+                        <ul>
+                            <li>Un'immagine può essere usata in più contenuti.</li>
+                            <li>Un'utente può scrivere un contenuto, di cui viene creata la versione 0</li>
+                            <li>Un'utente può modificare un contenuto, di cui viene creata una nuova versione per mantenere lo storico.</li>
+                        </ul>
+                        <p>
+                            <strong>Spiegazione: </strong>L'entità utente consiste in tutti gli utenti loggati del sito, ed è collegata all'entità ruolo.
+                            Quindi ad esempio l'utente Mario può avere il ruolo Scrittore e di conseguenza Mario potrà scrivere degl'articoli. <br>
+                            L'entità contenuti invece è il contenuto visto in astratto e consiste unicamente nel titolo e in una breve descrizione. 
+                            Essa si collega all'entità versioni che è complementare, e consiste nel resto del contenuto. 
+                            Ad esempio se dobbiamo scrivere un'articolo sullo Schema E/R verrà messo il titolo <i>Schema E/R</i> ed una breve descrizione 
+                            quindi <i>Lo schema E/R (Entità/Relazioni) serve a modellare dati e relazioni in un database.</i> verrano inseriti nella tabella Contenuti. <br>
+                            Invece l'intera spiegazione dello schema E/R consiste nella versione x.y.z e quindi verrà salvata nella tabella versioni. <br>
+                            L'immagine, potendo esser generica, può essere usata in più versioni. <br>
+                            L'utente quando scrive il nuovo contenuto scrive in contemporanea la versione 0.0.0 e di conseguenza vengono creati i rispettivi record nelle 
+                            rispettive tabelle. Successivamente l'approvatore quando approva la versione 0.0.0 di conseguenza approva il contenuto. Invece per le versioni successive
+                            essendo il contenuto già approvato, lui approverà unicamente la versione.
+                            
+                        </p>
+                    </figcaption>
+                </picture>
+            </section>
+
+            <section id="logicmodel">
+                <h2>Modello Logico</h2>
+                <p class="lead">Di seguito il Modello Logico.</p>          
+                
+                <b>VERSIONE</b> (Versione(PK) ID_contentuti(PK), Stato, Content, created_at, Email_utente_Approvare(FK), Email_utente_Creare(FK)) <br>
+                <b>IMMAGINI</b> (Path(PK)) <br>
+                <b>CONTENERE_VERSIONI_IMMAIGNI</b> (Versione(FK), Path(FK)) <br>
+                <b>CONTENTUTI</b> (ID(PK), Stato, Titolo, Desc, created_at, Email_utente_Approvare(FK), Email_utente_Scrivere(FK)) <br>
+                <b>UTENTE</b> (Email (PK), Password, Nome, Classe, DataNascita) <br>
+                <b>AVERE_UTENTE_RUOLO</b> (Email_utente(FK), Nome_ruolo(FK)) <br>
+                <b>RUOLO</b> (Nome(PK))<br>
+
+            </section>
+                
+            <hr class="divider">
+            <section id="requisiti">
+                <h2>Requisiti</h2>
+                <p class="lead">Di seguito i vari requisiti dell'applicazione</p>
+            </section>
+
+            <section id="requisitifunzionali">
+            <h2>Requisiti Funzionali</h2>
+            <p class="lead">
+                La piattaforma sarà strutturata in tre principali interfacce utente:
+                <ol>
+                    <li><strong>Interfaccia per moderatori/amministratori(approvatore):</strong>
+                        <ul>
+                            <li>Approva o respinge le modifiche effettuate dagli scrittori.</li>
+                            <li>Gestisce i contenuti e gli utenti con privilegi speciali.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Interfaccia per i creatori di contenuti (editor):</strong>
+                        <ul>
+                            <li>Propone nuove voci o modifica quelle esistenti.</li>
+                            <li>Le modifiche dovranno essere approvate da un moderatore prima della pubblicazione.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Interfaccia per gli utenti consultatori (front-end):</strong>
+                        <ul>
+                            <li>Consente la ricerca e la consultazione delle voci wiki.</li>
+                            <li>Non richiede la registrazione per l'accesso ai contenuti.</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <b>L’applicazione deve rispettare una serie di requisiti fondamentali.</b><br>
+
+                Deve essere in grado di tenere traccia delle <b>modifiche effettuate</b>, consentendo il <b>ripristino</b> dei contenuti a una <b>versione specifica</b>. 
+                Ogni bozza può essere <b>modificata</b>, ma finché una modifica non viene <u>approvata</u>, non è possibile apportarne di nuove alla stessa voce. 
+                L’editor deve avere un layout fisso, senza la possibilità di modificarlo. Inoltre, deve essere prevista una form di registrazione per <b>candidarsi 
+                    a ciascun ruolo</b>, e l’amministratore avrà la possibilità di <u>approvare</u> o <u>rifiutare</u> le candidature tramite email. I campi richiesti per la registrazione 
+                includono <b>email</b>, <b>password</b>, <b>classe</b>, <b>anno di nascita</b>, <b>nome</b> e <b>cognome</b>. La password deve avere una lunghezza compresa tra un minimo di 8 e un massimo di 
+                24 caratteri e deve contenere almeno un numero, una lettera e un carattere speciale. Dopo aver effettuato l’accesso tramite l’apposita form, l’utente 
+                potrà selezionare il <b>ruolo da utilizzare</b>, qualora ne possieda più di uno, come specificato nei casi d’uso.
+            </p>
+
+            </section>
+
+            <section id="requisitireteesicurezza">
+                <h2>Requisiti di Rete e Sicurezza</h2>
+                <p class="lead">
+                    L'obiettivo è garantire la <u>sicurezza della piattaforma</u> separando il web 
+                    server pubblico dall'infrastruttura interna che gestisce dati sensibili. <br>
+                    L'architettura è basata sull’ utilizzo di due <b>PC</b>:
+                    <ul>
+                        <li><strong>PC1 - Web Server Apache + RADIUS: </strong> 
+                            situato nella <b>DMZ</b>, che serve i client esterni e gestisce il traffico HTTPS attraverso un tunnel OpenTLS.
+                        </li>
+                        <li><strong>PC2 - Database MySQL + RADIUS: </strong>
+                            collocato nella <b>rete interna (LAN privata)</b>, è accessibile solo da PC1 e non è direttamente esposto a Internet.
+                        </li>
+                    </ul>
+
+                    Entrambi sono protetti dal <b>firewall di Ubuntu</b>, che controlla il traffico di rete e 
+                    garantisce che solo connessioni autorizzate possano passare.<br><br>
+                    
+                    
+                    
+                    <dl>
+                        <dt><strong>PC1 - Web Server Apache + RADIUS (DMZ):</strong></dt>
+                        <dd>
+                            <ul>
+                                <li>Accessibile solo tramite <b>HTTPS</b> su porta 443.</li>
+                                <li>Tunnel <b>OpenTLS</b> per garantire una connessione sicura. Si utilizza il software <b>Stunnel</b> per l'installazione.</li>
+                                <li>Firewall di Ubuntu configurato per <b>bloccare tutto il traffico non autorizzato</b>.</li>
+                                <li>Utilizzo di <b>Apache</b>.</li>
+                                <li>Application Server<b>RADIUS</b> per autenticazione sicura degli utenti.</li>
+                                <li>Può comunicare con <b>PC2</b> sulla LAN privata per interagire con il database o il servizio di autenticazione.</li>
+                            </ul>
+                        </dd>
+
+                        <dt><strong>PC2 - Database MySQL + RADIUS (LAN privata):</strong></dt>
+                        <dd>
+                            <ul>
+                                <li><b>NON è esposto direttamente a Internet</b>.</li>
+                                <li><b>Database MySQL</b> per la gestione dei dati.</li>
+                                <li><b>Server RADIUS</b> per autenticazione sicura degli utenti.</li>
+                                <li>Firewall di Ubuntu configurato per <b>accettare solo connessioni da PC1</b>.</li>
+                                <li>Blocco di tutte le connessioni non autorizzate dall'esterno.</li>
+                            </ul>
+                        </dd>
+
+                        <dt><strong>Firewall per PC1 (DMZ):</strong></dt>
+                        <dd>
+                            <ul>
+                                <li><b>Accettare</b> connessioni HTTPS sulla porta <b>443</b>.</li>
+                                <li><b>Permettere</b> connessioni verso PC2 solo sulle porte necessarie (es. <b>3306</b> per <b>MySQL</b>, <b>1812</b> per <b>RADIUS</b>).</li>
+                                <li><b>Bloccare</b> tutto il traffico in ingresso non autorizzato.</li>
+                            </ul>
+                        </dd>
+
+                        <dt><strong>Firewall per PC2 (LAN privata):</strong></dt>
+                        <dd>
+                            <ul>
+                                <li><b>Accettare</b> connessioni <b>solo da PC1</b> (nessun accesso diretto da Internet).</li>
+                                <li><b>Permettere</b> connessioni sulla porta <b>3306</b> (MySQL) e <b>1812</b> (RADIUS) esclusivamente da PC1.</li>
+                                <li><b>Bloccare</b> tutto il traffico proveniente da altre sorgenti.</li>
+                            </ul>
+                        </dd>
+                    </dl>
+
+                    
+                    
+                </p>
+    
+                </section>
+    
+            <hr class="divider">
+
+            <section id="wireframes">
+            <h2>Wireframes</h2>
+            <iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVIOGxnDw=/?moveToViewport=-615,-278,1228,556&embedId=975645904739" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+
+            <hr class="divider">
+
+            <section id="progetto">
+            <h2>Il progetto</h2>
+            <p class="lead">
+                <dl>
+                    <dt><strong>Librerie, Framework & Toolkit: </strong></dt>
+                    <dd>
+                        <ul>
+                            <li>MySQLi</li>
+                            <li>Mail</li>
+                            <li>Bootstrap</li>
+                            <li>Scribbler</li>
+                            <li>Fontawesome</li>
+                            <li>Highlight</li>
+                            <li>Magnific</li>
+                            <li>Easing</li>
+                            <li>JQuery</li>
+                        </ul>
+                    </dd>
+                </dl>
+            </p>
+            </section>
+
+                <section id="link">
+                <h2>Link al progetto</h2>
+                <a href="/src/index.php">Link al progetto</a>
+
+            </section>
+            
+        </div>
+        </div>
+        
+    </div>
+    <!-- Content end --> 
+    
+    <!-- Footer
+    ============================ -->
+    <footer id="footer" class="section bg-dark footer-text-light">
+        <div class="container">
+        
+        <p class="text-center">ITT e LSSA "Molinari" - Milano <a href="progettimolinari.it">Progetti Molinari</a>. Tutti i diritti riservati</p>
+        
+        </div>
+    </footer>
+    <!-- Footer end -->
+    
+    </div>
+    <!-- Document Wrapper end --> 
+
+    <!-- Back To Top --> 
+    <a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+    <!-- JavaScript
+    ============================ -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script> 
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+    <!-- Highlight JS -->
+    <script src="assets/vendor/highlight.js/highlight.min.js"></script> 
+    <!-- Easing --> 
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
+    <!-- Magnific Popup --> 
+    <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
+    <!-- Custom Script -->
+    <script src="assets/js/theme.js"></script>
+    </body>
+</html>
